@@ -10,9 +10,7 @@ uint16 shooter_barrel_heat_limit        # 机器人枪口热量上限
 uint16 shooter_17mm_1_barrel_heat       # 第 1 个 17mm 发射机构的枪口热量
 
 # 本机机器人位置数据 (裁判系统串口协议 V1.7.0 0x0203)
-float32 robot_pos_x                     # 本机器人位置 x 坐标，单位：m
-float32 robot_pos_y                     # 本机器人位置 y 坐标，单位：m
-float32 robot_pos_angle                 # 本机器人测速模块的朝向，单位：度。正北为 0 度
+geometry_msgs/Pose robot_pos              # 本机器人姿态
 
 # 伤害状态数据 (裁判系统串口协议 V1.7.0 0x0206)
 # const for hp deduction reason
