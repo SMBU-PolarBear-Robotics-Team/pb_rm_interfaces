@@ -12,6 +12,7 @@ find_package(rosidl_default_generators REQUIRED)
 find_package(geometry_msgs REQUIRED)
 
 rosidl_generate_interfaces(${PROJECT_NAME}
+  "msg/referee/Buff.msg"
   "msg/referee/EventData.msg"
   "msg/referee/GameRobotHP.msg"
   "msg/referee/GameStatus.msg"
