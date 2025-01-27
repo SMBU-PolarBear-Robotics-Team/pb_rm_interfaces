@@ -8,5 +8,5 @@ uint8 COUNT_DOWN = 3                # 五秒倒计时
 uint8 RUNNING = 4                   # 比赛中
 uint8 GAME_OVER = 5                 # 比赛结算中
 
-uint8 game_progress 0
-int32 stage_remain_time 0           # 当前阶段剩余时间，单位：秒
+uint8 game_progress
+int32 stage_remain_time             # 当前阶段剩余时间，单位：秒
