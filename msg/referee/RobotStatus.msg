@@ -26,5 +26,5 @@ uint8 armor_id                          # 当扣血原因为装甲模块被弹�
 uint8 hp_deduction_reason               # 血量变化类型
 
 # 允许发弹量 (裁判系统串口协议 V1.7.0 0x0208)
-uint16 projectile_allowance_17mm_1      # 17mm 弹丸剩余发射次数
+uint16 projectile_allowance_17mm      # 17mm 弹丸剩余发射次数
 uint16 remaining_gold_coin              # 剩余金币数量
