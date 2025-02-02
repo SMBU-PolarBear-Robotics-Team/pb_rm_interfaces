@@ -13,7 +13,7 @@ uint16 shooter_17mm_1_barrel_heat       # 第 1 个 17mm 发射机构的枪口�
 geometry_msgs/Pose robot_pos              # 本机器人姿态
 
 # 伤害状态数据 (裁判系统串口协议 V1.7.0 0x0206)
-# const for hp deduction reason
+# const for hp_deduction_reason
 uint8 ARMOR_HIT = 0                     # 装甲模块被弹丸攻击导致扣血
 uint8 SYSTEM_OFFLINE = 1                # 裁判系统重要模块离线导致扣血
 uint8 OVER_SHOOT_SPEED = 2              # 射击初速度超限导致扣血
@@ -26,5 +26,7 @@ uint8 armor_id                          # 当扣血原因为装甲模块被弹�
 uint8 hp_deduction_reason               # 血量变化类型
 
 # 允许发弹量 (裁判系统串口协议 V1.7.0 0x0208)
-uint16 projectile_allowance_17mm      # 17mm 弹丸剩余发射次数
+uint16 projectile_allowance_17mm        # 17mm 弹丸剩余发射次数
 uint16 remaining_gold_coin              # 剩余金币数量
+
+bool is_hp_deduced                      # 血量是否下降（上位机二次处理）
